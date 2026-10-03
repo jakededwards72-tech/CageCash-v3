@@ -1,25 +1,24 @@
-# 🎈 Blank app template
+# CageCash
 
-A simple Streamlit app template for you to modify!
+Mobile-first MMA simulation and betting intelligence desk.
 
-[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://blank-app-template.streamlit.app/)
+## Deploy to a brand-new GitHub repo + Vercel
+1. Upload the contents of this folder to the root of a new GitHub repository.
+2. Import the repository into Vercel.
+3. Framework preset: Vite (Vercel should auto-detect the project).
+4. Build command: `npm run build`.
+5. Add environment variables only if you enable external providers.
+6. Deploy.
 
-### How to run it on your own machine
+## Local development
+`npm install` then `npm run dev`.
 
-Prerequisite: install `uv` if you don't already have it.
+## What is included
+- Desk: card-first MMA dashboard with simulations and best-value surfaces.
+- Scanner: sortable value/trap board.
+- Fight pages: tape, lines, simulation distributions and replay.
+- Lab: custom matchups.
+- Model: methodology and assumptions.
+- Bankroll/Kelly settings and local bet slip.
 
-```
-$ curl -LsSf https://astral.sh/uv/install.sh | sh
-```
-
-1. Sync the dependencies
-
-   ```
-   $ uv sync
-   ```
-
-2. Run the app
-
-   ```
-   $ uv run streamlit run streamlit_app.py
-   ```
+The bundled fight dataset is a demonstration dataset. Production deployment should connect licensed/current event, fighter and sportsbook feeds before treating results as current market analysis.
